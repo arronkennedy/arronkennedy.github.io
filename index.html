@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arron-LandingPage</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .vidbg{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            position: relative;
+            min-height: 100vh;
+            font-size: 2em;
+            overflow: hidden;
+        }
+
+        .videobg{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            min-height: 100%;
+            min-width: 100%;
+            z-index: -1;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="vidbg">
+        <video class="videobg" src="VID/3163534-uhd_3840_2160_30fps.mp4" autoplay muted loop></video>
+        <div class="content">
+            <div class="text">
+                <h2>WELCOME TO MY PAGE</h2>
+            </div>
+            <div class="foto">
+                <img src="IMG/profile-1.png" alt="" width="250px">
+            </div>
+            <div class="text">
+                <p>my portfolio will open in 5 seconds</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+        //pindah ke halaman lain selama 5 detik
+        setTimeout(function(){
+            window.location.href = "index2.html";//akan pindah otomatis ke index 2.html
+        }, 5000);//satuannya ms. 5000ms = 5 detik
+    </script>
+</body>
+</html>
